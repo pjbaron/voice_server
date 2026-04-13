@@ -1,0 +1,74 @@
+voice-server - Third Party Licenses
+====================================
+
+This software includes or depends on the following third-party components:
+
+
+espeak-ng
+---------
+License: GPL-3.0-or-later
+Source:  https://github.com/espeak-ng/espeak-ng
+Use:     Text-to-phoneme conversion for all TTS backends.
+
+
+piper-tts
+---------
+License: GPL-3.0-or-later
+Source:  https://github.com/OHF-Voice/piper1-gpl
+Use:     VITS-based speech synthesis backend (Piper).
+
+
+kokoro-onnx
+------------
+License: Apache-2.0
+Source:  https://github.com/thewh1teagle/kokoro-onnx
+Use:     ONNX Runtime wrapper for Kokoro TTS model.
+
+
+Kokoro TTS Model (v1.0)
+------------------------
+License: Apache-2.0
+Source:  https://huggingface.co/hexgrad/Kokoro-82M
+Use:     Neural TTS model weights (downloaded separately).
+
+
+Piper Voices
+-------------
+License: MIT (model weights vary per voice, see individual model cards)
+Source:  https://huggingface.co/rhasspy/piper-voices
+Use:     VITS voice model weights (downloaded separately).
+
+
+ONNX Runtime
+-------------
+License: MIT
+Source:  https://github.com/microsoft/onnxruntime
+Use:     Neural network inference engine.
+
+
+FastAPI
+-------
+License: MIT
+Source:  https://github.com/fastapi/fastapi
+Use:     HTTP server framework.
+
+
+Uvicorn
+-------
+License: BSD-3-Clause
+Source:  https://github.com/encode/uvicorn
+Use:     ASGI server.
+
+
+NumPy
+-----
+License: BSD-3-Clause
+Source:  https://github.com/numpy/numpy
+Use:     Array operations for audio processing.
+
+
+phonemizer-fork
+----------------
+License: GPL-3.0-or-later
+Source:  https://github.com/espeak-ng/phonemizer-fork
+Use:     Python interface to espeak-ng (dependency of kokoro-onnx).

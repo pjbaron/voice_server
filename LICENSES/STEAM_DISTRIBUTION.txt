@@ -1,0 +1,43 @@
+Steam Distribution Notes
+========================
+
+voice-server is licensed under GPL-3.0. When distributing alongside
+a proprietary game on Steam, the following rules apply:
+
+
+DO:
+- Ship voice-server as a separate executable (not linked into the game)
+- Include this LICENSES/ folder in the Steam depot
+- Provide a link to the source code repository in THIRD_PARTY.txt
+- Allow users to modify and replace voice-server with their own build
+
+DO NOT:
+- Apply Steamworks DRM to voice-server.exe
+- Statically or dynamically link any GPL code into the game executable
+- Prevent users from running modified versions of voice-server
+
+
+Source Code Availability
+------------------------
+GPL-3.0 requires that source code is available to anyone who receives
+the binary. A public GitHub repository satisfies this requirement:
+
+  https://github.com/<your-org>/voice-server
+
+If the repository is ever taken down, you must provide source via
+another channel (e.g. written offer valid for 3 years per GPL section 6b).
+
+
+DRM
+---
+Steamworks DRM may be applied to the game executable ONLY.
+voice-server and all GPL components must remain DRM-free.
+This is required by GPL-3.0 section 3 (anti-TPM/anti-DRM clause).
+
+
+Communication
+-------------
+The game communicates with voice-server over HTTP (localhost).
+This is inter-process communication over a network socket, which
+does not constitute "linking" under the GPL. The game and server
+are separate works that happen to interoperate.

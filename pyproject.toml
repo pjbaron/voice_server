@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voice-server"
+version = "0.1.0"
+description = "Standalone TTS server with pluggable model backends"
+license = "GPL-3.0-or-later"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.110",
+    "uvicorn[standard]>=0.29",
+    "piper-tts>=1.2",
+    "kokoro-onnx>=0.5",
+    "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "httpx"]
+
+[project.scripts]
+voice-server = "voice_server.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["voice_server*"]

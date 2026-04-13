@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+.venv/
+models/**/*.onnx
+models/**/*.json
+models/**/*.bin
+*.wav
