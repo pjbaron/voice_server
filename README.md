@@ -31,6 +31,10 @@ Or without a server:
 python -m voice_server --backend kokoro --text "Hello world" --voice af_bella --output speech.wav
 ```
 
+To build as an executable:
+```pyinstaller voice-server.spec
+```
+
 ## Requirements
 
 - Python 3.10+
